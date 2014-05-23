@@ -24,7 +24,7 @@ class Yazici
 		if (preg_match("/^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/", $ip)) {
             $this->ip = $ip;
         } else {
-            throw new Exception($ip . ' is not a valid IP address !');
+            throw new Exception($ip . ' Gecersiz ip adresi !');
         }
 	}
 	/*
