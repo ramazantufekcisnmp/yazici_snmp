@@ -65,7 +65,9 @@ class Yazici
 	public function host(){
 		return $this->_getSNMP(self::yazici_host);
 	}
-	
+	/*
+	Yazıcı dan snmp ile bilgilerini almak için kullanılan metod
+	*/
 	private function _getSNMP($snmpID)
     {
         if ($this->ip == null) {
@@ -77,14 +79,16 @@ class Yazici
                 ? $this->_filtrele($snmpcikti) : self::bos_deger;
     }
 	
-	
+	/*
+	Dönen geğerin başındakileri siler.
+	*/
 	 private function _filtrele($cikti)
     {
         $temizle = array(
             'STRING: ',
             'INTEGER: ',
-			'Timeticks:',
-			'Counter32:',
+	    'Timeticks:',
+	    'Counter32:',
             '"'
         );
 		
