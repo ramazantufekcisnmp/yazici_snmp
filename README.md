@@ -11,5 +11,6 @@ echo "Yazici Ismi = ".$a->ad()."\r\n";
 echo "Alinan Cikti Sayisi = ".$a->sayfa_sayisi()."\r\n";
 echo "Yazici Toneri = ".$a->toner()."\r\n";
 echo "Yazicinin Host ismi = ".$a->host()."\r\n";
-?>```
+?>  
+```
 ===========
